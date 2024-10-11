@@ -1,7 +1,9 @@
 ﻿    body{
         background-image:url(https://bing.img.run/uhd.php);
-        background-repeat:no-repeat;
-        background-size:100% 100%;
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
     }
     #box{
         width:520px;
