@@ -228,7 +228,7 @@ function setBgImgInit() {
             $('#bg').attr('src', 'https://tu.ltyuanfang.cn/api/fengjing.php') //随机风景
             break;
         case "4":
-            $('#bg').attr('src', 'https://t.mwm.moe/pc') //随机二次元
+            $('#bg').attr('src', 'http://www.98qy.com/sjbz/api.php') //随机二次元
             break;
         case "5":
             $('#bg').attr('src', bg_img["path"]) //自定义
