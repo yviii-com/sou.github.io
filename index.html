@@ -560,4 +560,15 @@
 </body>
 <script charset="UTF-8" id="LA_COLLECT" src="/js/js-sdk-pro.min.js"></script>
 <script>LA.init({id:"KammuO5pW1qdlx9h",ck:"KammuO5pW1qdlx9h"})</script>
+    <script>
+document.addEventListener('DOMContentLoaded', (event) => {
+  document.getElementById('iframe').contentDocument.addEventListener('click', (e) => {
+    const target = e.target;
+    if (target.tagName.toLowerCase() === 'a' && target.href) {
+      e.preventDefault();
+      console.log('Links are not allowed in this iframe.');
+    }
+  });
+});
+</script>
 </html>
