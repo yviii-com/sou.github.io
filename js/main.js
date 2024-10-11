@@ -86,7 +86,7 @@ function time() {
 //获取天气
 //每日限量 100 次
 //请前往 https://www.tianqiapi.com/index/doc?version=v6 申请（免费）
-fetch('http://v1.yiketianqi.com/free/month?unescape=1&appid=86257157&appsecret=PzkvNl6c')
+fetch('https://devapi.qweather.com/v7/weather/now?location=101010100&key=ede1606bb6204ac18142e502b49ad6c4')
     .then(response => response.json())
     .then(data => {
         //$('#wea_text').html(data.wea + '&nbsp;' + data.tem_night + '℃' + '&nbsp;~&nbsp;' + data.tem_day + '℃')
